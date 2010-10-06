@@ -2,7 +2,8 @@
 // See the full tutorial at http://www.ladyada.net/learn/sensors/ir.html
 // this code is public domain, please enjoy!
 
-int IRledPin =  13;    // LED connected to digital pin 13
+int IRledPin =  12;    // LED connected to digital pin 12
+int buttonPin = 3;     // footswitch connected to digital #3
 
 // The setup() method runs once, when the sketch starts
 
@@ -10,16 +11,22 @@ void setup()   {
   // initialize the IR digital pin as an output:
   pinMode(IRledPin, OUTPUT);      
   
+  pinMode(buttonPin, INPUT);
+  digitalWrite(buttonPin, HIGH); // pullup on
+  
   Serial.begin(9600);
 }
 
 void loop()                     
 {
-  Serial.println("Sending IR signal");
+  if (! digitalRead(buttonPin)) {
+    // footswitch pressed
+    Serial.println("Sending IR signal");
   
-  SendCanonCode();
- 
-  delay(60*1000);  // wait one minute (60 seconds * 1000 milliseconds)
+    SendCanonCode();
+     
+    delay(3*1000);  // wait 3 seconds (* 1000 milliseconds)
+  }
 }
 
 // This procedure sends a 38KHz pulse to the IRledPin 
