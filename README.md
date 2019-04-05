@@ -5,7 +5,8 @@ and were moved to [https://github.com/adafruit/Adafruit_Learning_System_Guides/t
 
 Tutorial: IR Sensor [https://learn.adafruit.com/ir-sensor/](https://learn.adafruit.com/ir-sensor/)
 
-There are three IR test programs written in Arduino code and one in CirecuitPython
+There are three IR test programs written in Arduino code and one in CirecuitPython.
+
 See the tutorial for details.
 
 All code MIT License, please keep attribution
