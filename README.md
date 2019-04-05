@@ -1,6 +1,6 @@
 ## This repository has been archived
 
-The files in this repository accompany an [Adafruit Learning System](https://learn.adafruit.com) tutorial
+The files in this repository accompanied an [Adafruit Learning System](https://learn.adafruit.com) tutorial
 and were moved to [https://github.com/adafruit/Adafruit_Learning_System_Guides/tree/master/IR_Sensor](https://github.com/adafruit/Adafruit_Learning_System_Guides/tree/master/IR_Sensor)
 
 Tutorial: IR Sensor [https://learn.adafruit.com/ir-sensor/](https://learn.adafruit.com/ir-sensor/)
